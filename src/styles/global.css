@@ -5,7 +5,7 @@
  */
 
 :root {
-	--accent: #2337ff;
+	--accent: #00bf63;
 	--accent-dark: #000d8a;
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
@@ -16,6 +16,7 @@
 		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
 		0 16px 32px rgba(var(--gray), 33%);
 }
+
 @font-face {
 	font-family: 'Atkinson';
 	src: url('/fonts/atkinson-regular.woff') format('woff');
@@ -23,6 +24,7 @@
 	font-style: normal;
 	font-display: swap;
 }
+
 @font-face {
 	font-family: 'Atkinson';
 	src: url('/fonts/atkinson-bold.woff') format('woff');
@@ -30,6 +32,7 @@
 	font-style: normal;
 	font-display: swap;
 }
+
 body {
 	font-family: 'Atkinson', sans-serif;
 	margin: 0;
@@ -43,12 +46,14 @@ body {
 	font-size: 20px;
 	line-height: 1.7;
 }
+
 main {
-	width: 720px;
+	width: 800px;
 	max-width: calc(100% - 2em);
 	margin: auto;
 	padding: 3em 1em;
 }
+
 h1,
 h2,
 h3,
@@ -59,78 +64,99 @@ h6 {
 	color: rgb(var(--black));
 	line-height: 1.2;
 }
+
 h1 {
 	font-size: 3.052em;
 }
+
 h2 {
 	font-size: 2.441em;
 }
+
 h3 {
 	font-size: 1.953em;
 }
+
 h4 {
 	font-size: 1.563em;
 }
+
 h5 {
 	font-size: 1.25em;
 }
+
 strong,
 b {
 	font-weight: 700;
 }
+
 a {
 	color: var(--accent);
 }
+
 a:hover {
 	color: var(--accent);
 }
+
 p {
 	margin-bottom: 1em;
 }
+
 .prose p {
 	margin-bottom: 2em;
 }
+
 textarea {
 	width: 100%;
 	font-size: 16px;
 }
+
 input {
 	font-size: 16px;
 }
+
 table {
 	width: 100%;
 }
+
 img {
 	max-width: 100%;
 	height: auto;
 	border-radius: 8px;
 }
+
 code {
 	padding: 2px 5px;
 	background-color: rgb(var(--gray-light));
 	border-radius: 2px;
 }
+
 pre {
 	padding: 1.5em;
 	border-radius: 8px;
 }
-pre > code {
+
+pre>code {
 	all: unset;
 }
+
 blockquote {
 	border-left: 4px solid var(--accent);
 	padding: 0 0 0 20px;
 	margin: 0px;
 	font-size: 1.333em;
 }
+
 hr {
 	border: none;
 	border-top: 1px solid rgb(var(--gray-light));
 }
+
 @media (max-width: 720px) {
 	body {
 		font-size: 18px;
 	}
+
 	main {
 		padding: 1em;
 	}
@@ -152,4 +178,85 @@ hr {
 	clip-path: inset(50%);
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
+}
+
+.logo__container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo {
+	width: 45px;
+}
+
+.card {
+	display: flex;
+	position: relative;
+
+	min-width: 640px;
+	min-height: 340px;
+}
+
+.card img {
+	width: 100%;
+}
+
+.card__text {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	right: 0;
+
+	padding: 0.8em;
+
+	width: 80%;
+	height: 100%;
+
+	justify-content: center;
+	align-items: end;
+
+	clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0 100%);
+	color: #fff;
+	background: rgba(3, 48, 26, 0.7);
+	box-sizing: border-box;
+}
+
+.card__text p {
+	width: 60%;
+}
+
+.banner {
+	display: flex;
+	position: relative;
+
+	margin: 0 auto;
+	padding: 1em;
+
+	width: 95%;
+	height: 500px;
+
+	justify-content: center;
+	align-items: center;
+
+	background: url(https://cdn-3.expansion.mx/dims4/default/743e3af/2147483647/strip/true/crop/724x483+0+0/resize/1800x1201!/format/webp/quality/80/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F94%2F9e%2Fc44c8c094a998257e09e53b992b4%2Fcrisis-industria-gaming.jpg) no-repeat center center / cover;
+}
+
+.banner h1 {
+	width: 800px;
+	color: #fff;
+	text-shadow: 0 1px 10px #000;
+}
+
+.author {
+	font-size: 12pt;
+	color: var(--accent);
+}
+
+.author__name {
+	font-style: normal;
+	color: #000;
 }

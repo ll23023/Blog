@@ -1,49 +1,262 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
 		<Header />
+		<section class="banner">
+			<h1>Los Problemas actuales en la Industria del Gaming.</h1>
+		</section>
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
+			<span class="author">
+				<b>Por</b> <i class="author__name">LL23023</i>
+			</span>
 			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
+				A lo largo de los últimos años, la industria del videojuego se
+				ha visto envuelta en diversas polémicas debido a lanzamientos de
+				incompletos, prácticas anticonsumidor, estafas y más. En
+				este blog encontrarás algunos de los acontecimientos más sonados
+				de la actualidad, echemos un vistazo.
 			</p>
+
+			<h4>Juegos Rotos.</h4>
 			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
+				Hoy en día se tiene muy normalizado que un juego salga en mal
+				estado día uno, con la esperanza (a veces falsa) de que sea
+				reparado en el corto plazo.
 			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
+
+			<figure class="card">
+				<img
+					src="https://i.ytimg.com/vi/0rn0fBqpTNo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBkYpsmvSVllTAzACKXczQLZERnWA"
+					alt="El Desastroso Lanzamiento de Cyberpunk 2077"
+				/>
+				<figcaption class="card__text">
+					<p>
+						Cyberpunk 2077 fue uno de los videojuegos más esperados
+						del año pasado pero su salida provocó el reclamo de los
+						fanáticos que han jugado el videojuego en PS4 o Xbox
+						One.
+						<a
+							href="https://eldiariony.com/2021/01/16/cyberpunk-2077-que-causo-el-desastroso-lanzamiento-del-videojuego-y-como-fue-la-disculpa-de-uno-de-sus-creadores/"
+							>- El Diario</a
+						>
+					</p>
+				</figcaption>
+			</figure>
+
 			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
+				Cyberpunk 2077 fue uno de los primeros juegos
+				en lanzarse en mal estado. Envuelto en comentarios negativos por
+				parte de los consumidores, bugs, mal rendimiento, pésima
+				inteligencia artificial de los NPCs y texturas incompletas
+				fueron algunos de los puntos que se dieron a notar de este
+				juego. <br />
+				Si bien hoy en día es considerado como una obra maestra debido a
+				las muchas actualizaciones para reparar errores y su más reciente
+				expansión <i>Phantom Liberty</i>, eso no borra la gran mancha
+				que dejó en la industria por parte de CD Project Red.
 			</p>
+
+			<h4>Juegos falsos.</h4>
 			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
+				En 2021 fuimos testigos de un acontecimiento importante (para
+				mal). La empresa Fntastic anuncia su próximo juego: <i
+					>The Day Before</i
+				>, el cual sería un MMO de supervivencia con hordas de zombies
+				en donde podrías enfrentarte contra otros jugadores por los
+				recursos, o eso es lo que decían&mldr;
+			</p>
+
+			<figure class="card">
+				<img
+					src="https://i.ytimg.com/vi/t6aD_iHnJ_w/maxresdefault.jpg"
+					alt="Fraude de Fntastic"
+				/>
+				<figcaption class="card__text">
+					<p>
+						El título de Fntastic ya ha salido a la venta hace unas
+						horas y hay muchos jugadores descontentos por muchos
+						motivos, aunque sus desarrolladores pueden estar felices
+						por otros.
+
+						<a
+							href="https://www.3djuegos.com/juegos/the-day-before/noticias/the-day-before-ha-salido-a-venta-ha-empezado-muy-mal-pie-no-se-puede-casi-jugar-tiene-criticas-mayormente-negativas-steam"
+							>- 3D Juegos</a
+						>
+					</p>
+				</figcaption>
+			</figure>
+
+			<p>
+				Siendo uno de los juegos más esperados en Steam en los últimos
+				tiempos, fue anunciado con un video que mostraba un gameplay con
+				gráficos punteros, unas mecánicas interesantes y un muy buen
+				sistema de combate, prometiendo horas de juego y con un tiempo
+				de espera muy corto de tan solo unos meses, puesto que saldría
+				en junio del próximo año, sin embargo, el tiempo de espera
+				se extendió. <br />
+				Fntastic anuncia su primer retraso, pasando de junio 2022 a marzo
+				del 2023 y posteriormente a noviembre de ese mismo año.
+			</p>
+
+			<p>
+				El juego salió, pero no era para nada lo que los jugadores
+				esperaban. Lleno de bugs, un mundo vacío, un sistema de combate
+				pésimo, downgrade en los gráficos, mala optimización, entre
+				muchos otros problemas. Se descubrió que todo el juego había
+				sido hecho con assets comprados o descargados y que los trailers
+				que mostraban cómo sería el juego eran falsos, se trataban de
+				animaciones pre-renderizadas, provocando que ahora el público
+				desconfíe de los estudios pequeños al anunciar juegos,
+				por miedo a otra posible estafa.
+			</p>
+
+			<h4>La monetización.</h4>
+			<p>
+				Si bien el querer generar ingresos es el principal propósito de
+				las empresas desarrolladoras, muchas de estas han empleado
+				técnicas que podrían considerarse un tanto (o muy) abusivas para
+				este fin.
+			</p>
+
+			<figure class="card">
+				<img
+					src="https://i.blogs.es/38956d/2024-09-12_13-55-50_000/650_1200.png"
+					alt="Microtransacciones"
+				/>
+				<figcaption class="card__text">
+					<p>
+						Los juegos frecuentemente utilizan notificaciones,
+						temporizadores o recompensas diarias para fomentar la
+						compra impulsiva y crear un sentido de urgencia en el
+						jugador. <br />
+
+						<a
+							href="https://www.infobae.com/espana/2024/10/14/micropagos-en-videojuegos-una-puerta-a-la-ludopatia-para-los-mas-jovenes-que-ahora-europa-pone-bajo-lupa-hay-una-similitud-entre-jugar-y-apostar/"
+							>- Infobae</a
+						>
+					</p>
+				</figcaption>
+			</figure>
+
+			<p>
+				Las microtransacciones no son algo nuevo, pero siempre han sido
+				polémicas en cuanto a su implementación debido a que causan un
+				efecto psicológico en el jugador al no saber con exactitud
+				cuánto está pagando exactamente por lo que compra, eso debido a
+				que por lo general se compra una moneda virtual en paquetes. <br
+				/>
+				Por ejemplo: si en un juego tienes la oferta de comprar un aspecto
+				que cuesta 70 monedas del juego y la oferta más barata te da 50 a
+				$2.50, pero hay otra que te da 100 a $4 sientes que es mejor pagar
+				un poco más, pero con un pequeño porcentaje de "ganancia"
+			</p>
+
+			<figure class="card">
+				<img
+					src="https://i.blogs.es/f17694/photo_2020-03-02_12-37-38/650_1200.jpg"
+					alt="Loot Boxes"
+				/>
+				<figcaption class="card__text">
+					<p>
+						Países como los Estados Unidos han planteado en muchas
+						ocasiones la posibilidad de regular los juegos de azar
+						en el ocio electrónico
+
+						<a
+							href="https://www.lavanguardia.com/tecnologia/videojuegos/20240612/9724019/videojuegos-azar-que-son-loot-boxes-gobierno-quiere-prohibir.html"
+							>- La Vanguardia</a
+						>
+					</p>
+				</figcaption>
+			</figure>
+
+			<p>
+				Por allá del 2010 fue cuando el término <i>loot boxes</i> comenzó
+				a ser más usado gracias a <i>Team Fortress 2</i>, un sistema
+				basado en comprar una caja sorpresa con la moneda del juego en
+				la cual te podían tocar recompensas de manera aleatoria. Esto se
+				popularizó tanto a tal punto que hoy en día es casi como un
+				estándar en los videojuegos, pero a su vez, es un tipo de
+				monetización que incita a la ludopatía debido a que no sabes lo
+				que te puede tocar y por lo general los juegos te muestran una
+				ruleta con las recompensas en donde, casualmente siempre (o la
+				mayor parte de las veces) quedas cerca de una recompensa muy
+				buena.
+			</p>
+
+			<figure class="card">
+				<img
+					src="https://i0.wp.com/tarreo.buscafs.com/2025/04/Honkai-Star-Rail-Warp-Gacha-0001.jpg?quality=75&strip=all"
+					alt="Sistema gacha en videojuegos"
+				/>
+				<figcaption class="card__text">
+					<p>
+						Este modelo, que guarda similitudes con las máquinas
+						tragamonedas, implica que los jugadores gastan dinero
+						con la esperanza de obtener recompensas aleatorias de
+						valor variable.
+
+						<a
+							href="https://www.tarreo.com/noticia/el-19-de-los-jugadores-en-japon-entre-20-y-30-anos-gasta-tanto-dinero-en-gacha-que-no-le-alcanza-para-cubrir-sus-gastos-basicos/"
+							>- Tarreo</a
+						>
+					</p>
+				</figcaption>
+			</figure>
+
+			<p>
+				Los juegos gacha han ganado mucha popularidad, no solo porque
+				muchas personas los juegan, sino porque muchas otras personas
+				los aborrecen, eso por su sistema de monetización, el cual es
+				muy parecido a las loot boxes que ya hablamos, pero con unas
+				cuantas diferencias. <br />
+				Aunque su base es la misma de obtener recompensas por medio de pagar
+				con una moneda virtual y no saber qué te puede tocar, este sistema
+				viene adaptado de las máquinas gachapón de Japón (de ahí su nombre),
+				las cuales tienen la peculiaridad de asegurarte la recompensa máxima
+				después de ciertas <i>tiradas</i>, aunque con un truco.
+			</p>
+
+			<p>
+				En la industria del gaming, estos juegos te ofrecen por lo
+				general personajes con diseños llamativos, animaciones muy
+				trabajadas y un nivel de poder alto, creando un sentimiento de
+				necesidad para el jugador por obtener dicho personaje, atuendo o
+				cosmético. Estos cuentan con un <i>pity</i>, el cual es la
+				cantidad de tiros que has hecho para obtener esa recompensa y
+				que al llegar al límite o cerca de este se te asegura una
+				recompensa de valor <a
+					href="https://store.epicgames.com/es-ES/news/gacha-games-explained-banners-pulls-pity-systems-and-more#:~:text=%C2%BFQu%C3%A9%20significa%20%22gacha%22?,conseguir%20un%20premio%20en%20concreto."
+					>máximo</a
+				>, el cual tiende a tener un límite alto entre 60 y 90.
+			</p>
+
+			<p>
+				Así mismo hay otros muchos problemas actuales en las industria,
+				como precios elevados, <i>crunch</i> por parte de los desarrolladores, paredes de pago elevadas (generalmente por empresas como EA o Ubisoft), entre otros.
+			</p>
+
+			<p>
+				Este blog no busca "satanizar" a la industria del gaming, sino concientizar sobre estos problemas que la afectan tanto hoy en día. <br>
+				Muchas gracias por leer.
 			</p>
 		</main>
 		<Footer />
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+			integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"></script>
 	</body>
 </html>
